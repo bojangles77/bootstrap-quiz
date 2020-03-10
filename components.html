@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Components</title>
     <style media="screen">
-      div div {
-        background-color: plum;
-        border: 1px solid white;
+      .textmiddle {
+        text-align: center;
       }
       .yellow {
         background-color:yellow;
@@ -30,6 +29,12 @@
       .grey {
         background-color: lightgrey;
                 height:200px
+      }
+      .greybutton {
+        background-color: lightgrey;
+      }
+      .whitetext {
+        color:white;
       }
     </style>
   </head>
@@ -69,8 +74,20 @@
           </nav>
         </div>    <!-- END COL DIV -->
         <div class="col-4">
-          <br>
-          <br>
+          <h1>Dropdown</h1>
+          <!-- Example single danger button -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Action
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </div>
         </div>    <!-- END COL DIV -->
       </div>    <!-- END ROW DIV -->
       <div class="row">
@@ -114,22 +131,44 @@
         </ul>
         </div>    <!-- END COL DIV -->
         <div class="col-4">
-          <br>
-          <br>
+          <h1>Nav List</h1>
+          <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-action greybutton">
+              Home
+            </button>
+            <button type="button" class="list-group-item list-group-item-action greybutton">Library</button>
+            <button type="button" class="list-group-item list-group-item-action greybutton">Applications</button>
+            <button type="button" class="list-group-item list-group-item-action greybutton">Help</button>
+          </div>
         </div>    <!-- END COL DIV -->
       </div>    <!-- END ROW DIV -->
       <div class="row">
         <div class="col-4">
-          <br>
-          <br>
+          <h1>Labels</h1>
+          <span class="badge badge-secondary">Default</span>
+          <span class="badge badge-success">Success</span>
+          <span class="badge badge-warning whitetext">Warning</span>
+          <span class="badge badge-danger">Danger</span>
+          <span class="badge badge-info">Info</span>
         </div>    <!-- END COL DIV -->
         <div class="col-4">
-          <br>
-          <br>
+          <h1>Badges</h1>
+          <span class="badge badge-pill badge-secondary">Default</span>
         </div>    <!-- END COL DIV -->
         <div class="col-4">
-          <br>
-          <br>
+          <h1>Progress Bar</h1>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
         </div>    <!-- END COL DIV -->
       </div>    <!-- END ROW DIV -->
     </div>    <!-- END CONTAINER DIV -->
